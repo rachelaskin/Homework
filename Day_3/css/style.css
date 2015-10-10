@@ -1,0 +1,50 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	background-image: url("images/header_bg.jpg");
+	padding: 10px 400px 0px 400px;
+}
+#container{
+	color: white;
+	border-width: 10px;
+	margin-bottom: -25px;
+}
+header{
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
+	background-size: 100%;
+}
+.yellow-button{
+	background-color: #f9e42e;
+	padding: 10px 0px 30px 0px;
+	color: white;
+	text-align: center;
+	border-radius: 5px;
+	font-weight: bold 14px;
+}
+.list{
+	background-color: #f0efef;
+	padding: 30px 200px 30px 75px;
+}
+.signup{
+	background-color: #033048;
+}
+.quote{
+	color: white;
+	background-image: url("images/testimonial_bg copy.jpg");
+	font: #FFFFFF;
+	padding: 30px 120px 30px 120px;
+}
+.signup{
+	background-color: #f9e42e;
+}
+button:first-child{
+	background-color: #f9e42e;
+	border-radius: 5px;
+}
+button:last-child{
+	background-color: #033048;
+	border-radius: 5px;
+}
+footer{
+	background-color: #033048;
+}
