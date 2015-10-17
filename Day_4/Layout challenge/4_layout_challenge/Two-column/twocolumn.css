@@ -1,0 +1,29 @@
+header{
+	background-color: gray;
+	border: 1px solid black;
+	color: white;
+	padding: 50px 50px 50px 50px;
+}
+.left{
+	float: left;
+	width: 65%;
+	background-color: gray;
+	border: 1px solid black;
+	color: white;
+	padding: 10px 0px 500px 10px;
+}
+.right{
+	float: right;
+	width: 32%;
+	background-color: gray;
+	border: 1px solid black;
+	color: white;
+	padding: 10px 0px 500px 10px;
+}
+.footer{
+	background-color: red;
+	border: 1px solid black;
+	color: white;	
+	padding: 100px 50px 50px 50px;
+	margin: 560px 0px 0px 0px;
+}

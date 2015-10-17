@@ -1,0 +1,107 @@
+header{
+	float: left;
+	background-color: gray;
+	border: 1px solid black;
+	color: white;
+	width: 15%;
+	padding: 50px 50px 50px 50px;
+}
+li {
+	float: right;
+	display: inline-block;
+	background-color: gray;
+	border: 1px solid black;
+	color: white;
+	padding: 20px 60px 20px 60px;
+	margin: 30px 10px 50px 10px;
+}
+.column{
+	float: left;
+	background-color: gray;
+	position: absolute;
+	border: 1px solid black;
+	color: white;
+	padding: 10px 0px 500px 0px;
+	width: 10%;	
+	margin: 130px 0px 2px 0px;
+}
+.top{
+	background-color: yellow;
+	border: 1px solid black;
+	color: black;
+	padding: 10px 60px 120px 5px;
+	margin: 150px 2px 0px 170px;
+	width: 83%;
+}
+.middle{
+	display: inline-block;
+	background-color: yellow;
+	border: 1px solid black;
+	color: black;
+	width: 60%;
+	padding: 10px 50px 200px 5px;
+	margin: 30px 10px 0px 170px;
+}
+.right{
+	display: inline-block;
+	background-color: yellow;
+	border: 1px solid black;
+	color: black;
+	width: 8%;
+	padding: 10px 5px 200px 5px;
+	margin: 30px 10px 0px 170px;
+}
+nav {
+	display: block;
+	margin-left: 70px;
+}
+.bottoms{
+	margin-top: 30px;
+}
+.one{
+	float: none;
+	display: inline-block;
+	width: 20%;
+	background-color: red;
+	border: 1px solid black;
+	color: white;
+	padding: 25px 20px 25px 10px;
+	margin: 10px 0px 0px 100px;
+}
+.two{
+	float: none;
+	width: 20%;
+	background-color: red;
+	border: 1px solid black;
+	color: white;
+	display: inline-block;
+	padding: 25px 20px 25px 10px;
+	margin: 10px 0px 0px 0px;
+}
+.three{
+	float: none;
+	display: inline-block;
+	width: 20%;	
+	background-color: red;
+	border: 1px solid black;
+	color: white;
+	padding: 25px 20px 25px 10px;
+	margin: 10px 0px 0px 0px;
+}
+.four{
+	float: none;
+	display: inline-block;
+	width: 20%;	
+	background-color: red;
+	border: 1px solid black;
+	color: white;
+	padding: 25px 20px 25px 10px;
+	margin: 10px 0px 0px 0px;
+}
+.footer{
+	background-color: gray;
+	border: 1px solid black;
+	color: white;	
+	padding: 50px 50px 50px 50px;
+	margin: 25px 0px 0px 0px;
+}

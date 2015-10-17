@@ -1,0 +1,39 @@
+header{
+	background-color: gray;
+	border: 1px solid black;
+	color: white;
+	padding: 50px 50px 50px 50px;
+}
+.left{
+	float: left;
+	background-color: gray;
+	border: 1px solid black;
+	color: white;
+	padding: 10px 10px 300px 10px;
+	margin: auto;
+	width: 15%;
+}
+.middle{
+	background-color: red;
+	border: 1px solid black;
+	color: yellow;
+	padding: 10px 10px 300px 100px;
+	margin-left: 100px;
+	width: 40%;
+	display: inline-block;
+}
+.right{
+	float: right;
+	width: 15%;
+	background-color: gray;
+	border: 1px solid black;
+	color: white;
+	padding: 10px 10px 300px 100px;
+}
+.footer{
+	background-color: red;
+	border: 1px solid black;
+	color: white;	
+	padding: 50px 50px 50px 50px;
+	margin: 50px 0px 0px 0px;
+}

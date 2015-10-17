@@ -1,0 +1,9 @@
+.message{
+	color: red;
+}
+.error{
+	background-color: black;
+}
+.success{
+	background-color: gray;
+}

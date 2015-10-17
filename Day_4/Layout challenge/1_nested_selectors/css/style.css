@@ -1,0 +1,6 @@
+blockquote{
+	font-style: italic;
+}
+blockquote em{
+	color: red;
+}

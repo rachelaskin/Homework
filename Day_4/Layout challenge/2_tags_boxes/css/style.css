@@ -1,0 +1,29 @@
+h1{
+	background-color: red;
+	padding: 5px 5px 5px 5px;
+	border: 5px solid black;
+}
+p{
+	background-color: blue;
+	color: white;
+	padding: 10px 10px 10px 10px ;
+	border: 10px solid black;
+}
+code{
+	background-color: white;
+	color: black;
+	padding: 2px 2px 2px 2px;
+	border: 1px solid black;
+}
+h2{
+	background-color: black;
+	color: orange;
+	padding: 5px 5px 5px 5px;
+	margin: 25px 25px 25px 25px;
+}
+ol{
+	color: red;
+}
+li{
+	background-color: black;
+}
