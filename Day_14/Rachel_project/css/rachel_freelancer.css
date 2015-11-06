@@ -461,7 +461,8 @@ footer .footer-below {
 /*override*/
 
 .main-site-image{
-    max-height: 300px;
+    max-height: 400px;
+    border-radius: 100%;
 }
 
 hr.star-light, hr.star-primary{
@@ -483,4 +484,13 @@ hr.star-light, hr.star-primary{
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
     background-color: #2E9E85;
     border-color: #2E9E85;
+}
+form .row:first-child .floating-label-form-group{
+    border: none;
+}
+/*.measurement-one{
+    float: left;
+}*/
+.btn-lg, .btn-group-lg, .btn {
+    padding: 8px 17px 8px 17px;
 }

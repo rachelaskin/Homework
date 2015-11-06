@@ -17,6 +17,8 @@
     <!-- Custom CSS -->
     <link href="css/rachel_bootstrap.css" rel="stylesheet">
     <link href="css/rachel_freelancer.css" rel="stylesheet">
+    <!-- I want to add styling to the list of ingredients as they're added, but because the jQuery isn't working yet, I can't see the list, therefore can't yet edit the CSS. Right now, I have the rachel_ingredients.css file based on the To Do List classwork assignment, but once the jQuery is working, I will style this .css file to match the design of my site. -->
+<!--     <link href="css/rachel_ingredients.css" rel="stylesheet"> -->
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -47,7 +49,7 @@
                 </button>
                 <a class="navbar-brand" href="#page-top">Shayne's Kitchen</a>
             </div>
-
+            <!-- Scroll stopped working somewhere along the way although I have not edited the scroll portions of jQuery. -->
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
@@ -62,9 +64,6 @@
                     </li>
                     <li class="page-scroll">
                         <a href="#contact">Add new recipe</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#tips">Tips</a>
                     </li>
                 </ul>
             </div>
@@ -217,40 +216,142 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
                     <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Name</label>
-                                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                    <form name="sentMessage" id="newIngredient" novalidate>
+                        <div class="measurement-one">
+                            <div class="row control-group">
+                                <div class="form-group col-xs-12 floating-label-form-group controls">
+                                    <label>Ingredients</label>
+                                </div>
+                                <div class="col-xs-4">
+                                    <select class="form-control" id="select">
+                                  <option disabled selected>Measurement</option>
+                                  <option>1/8</option>
+                                  <option>1/4</option>
+                                  <option>1/3</option>
+                                  <option>1/2</option>
+                                  <option>2/3</option>
+                                  <option>3/4</option>
+                                  <option>2</option>
+                                  <option>2 1/8</option>
+                                  <option>2 1/4</option>
+                                  <option>2 1/3</option>
+                                  <option>2 1/2</option>
+                                  <option>2 2/3</option>
+                                  <option>2 3/4</option>
+                                  <option>3 </option>
+                                  <option>3 1/8</option>
+                                  <option>3 1/4</option>
+                                  <option>3 1/3</option>
+                                  <option>3 1/2</option>
+                                  <option>3 2/3</option>
+                                  <option>3 3/4</option>
+                                  <option>4 </option>
+                                  <option>4 1/8</option>
+                                  <option>4 1/4</option>
+                                  <option>4 1/3</option>
+                                  <option>4 1/2</option>
+                                  <option>4 2/3</option>
+                                  <option>4 3/4</option>
+                                  <option>5 </option>
+                                  <option>5 1/8</option>
+                                  <option>5 1/4</option>
+                                  <option>5 1/3</option>
+                                  <option>5 1/2</option>
+                                  <option>5 2/3</option>
+                                  <option>5 3/4</option>
+                                  <option>6 </option>
+                                  <option>6 1/8</option>
+                                  <option>6 1/4</option>
+                                  <option>6 1/3</option>
+                                  <option>6 1/2</option>
+                                  <option>6 2/3</option>
+                                  <option>6 3/4</option>
+                                  <option>7 </option>
+                                  <option>7 1/8</option>
+                                  <option>7 1/4</option>
+                                  <option>7 1/3</option>
+                                  <option>7 1/2</option>
+                                  <option>7 2/3</option>
+                                  <option>7 3/4</option>
+                                  <option>8 </option>
+                                  <option>8 1/8</option>
+                                  <option>8 1/4</option>
+                                  <option>8 1/3</option>
+                                  <option>8 1/2</option>
+                                  <option>8 2/3</option>
+                                  <option>8 3/4</option>
+                                  <option>9 </option>
+                                  <option>9 1/8</option>
+                                  <option>9 1/4</option>
+                                  <option>9 1/3</option>
+                                  <option>9 1/2</option>
+                                  <option>9 2/3</option>
+                                  <option>9 3/4</option>
+                                  <option>10 </option>
+                                  <option>10 1/8</option>
+                                  <option>10 1/4</option>
+                                  <option>10 1/3</option>
+                                  <option>10 1/2</option>
+                                  <option>10 2/3</option>
+                                  <option>10 3/4</option>
+                                    </select>
+                                </div>
+                                <div class="col-xs-4">
+                                    <input type="text" class="form-control" placeholder="Ingredient" id="ingredientName">
+                                 </div>
                                 <p class="help-block text-danger"></p>
-                            </div>
+                                <div id="add-ingredient">
+                                <!-- Clicking the "Add ingredient" button should display a list of new ingredients typed in, similar to our To Do List classwork assignment. The list should appear underneath the ingredient fields and above "Step 1." Right now, clicking the button does nothing. -->
+                                        <div class="form-group col-xs-4">
+                                            <button type="submit" id="add" class="btn btn-success btn-lg">Add ingredient</button>
+                                        </div>
+                                </div>
+                                <div id="list">
+                                    <ul id="ingredients-added"></ul>
+                                </div>
+                            </div>    
                         </div>
+                    </form>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Email Address</label>
-                                <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Phone Number</label>
-                                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                <label>Message</label>
+                                <textarea rows="5" class="form-control" placeholder="Step 1" id="message" required data-validation-required-message="Please enter an instruction."></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Message</label>
-                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                <textarea rows="5" class="form-control" placeholder="Step 2" id="message" required data-validation-required-message="Please enter an instruction."></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Message</label>
+                                <textarea rows="5" class="form-control" placeholder="Step 3" id="message" required data-validation-required-message="Please enter an instruction."></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Message</label>
+                                <textarea rows="5" class="form-control" placeholder="Step 4" id="message" required data-validation-required-message="Please enter an instruction."></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <br>
+                        <div id="add-step"></div>
+                        <!-- This is the second place where I'm having trouble w/jQuery. I want the "Add another step" button to add an additional text area for adding more instructions. -->
+                        <div class="row">
+                            <div class="form-group col-xs-6">
+                                <button type="submit" id="add-step" class="btn btn-success btn-lg">Add another step</button>
+                            </div>
                         <div id="success"></div>
                         <div class="row">
-                            <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg">Submit</button>
+                            <div class="form-group col-xs-6">
+                            <!-- I'd like to connect this to a Google Sheet so that it records new recipes added. This is likely last on my list of things to complete on the project. -->
+                                <button type="submit" name="entry.679142677" class="btn btn-success btn-lg">SUBMIT RECIPE!</button>
                             </div>
                         </div>
                     </form>

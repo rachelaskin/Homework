@@ -1,0 +1,56 @@
+form, input, button {
+  font-size: 24px;
+}
+
+#list {
+	max-width: 30em;
+	margin: 10px auto;
+	border-radius: 10px;
+	padding: 2px;
+	background: white;
+	box-shadow: 0 0 5px rgba(0,0,0,.5);
+}
+
+#list header, #app footer {
+	background: #222;
+	color: white;
+	padding: 20px;
+}
+#list header {
+	border-radius: 10px 10px 0 0;
+}
+#list footer {
+	border-radius: 0 0 10px 10px;
+}
+
+#ingredients-added {
+	background: white;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#ingredients-added li {
+	padding: 8px 20px;
+}
+#ingredients-added li:hover {
+	background: #EEE;
+}
+
+#ingredients-added .item {
+	cursor: pointer;
+}
+
+#ingredients-added a {
+	visibility: hidden;
+	cursor: pointer;
+	margin-left: 1em;
+	font-size: .5em;
+	text-transform: uppercase;
+	color: navy;
+}
+#ingredients-added li:hover a {
+	visibility: visible;
+}
+#ingredients-added a:hover {
+	text-decoration: underline;
+}
