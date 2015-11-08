@@ -40,7 +40,7 @@ $('.navbar-collapse ul li a').click(function() {
 
 
 // Add new ingredient when submit button is clicked
-$('#newIngredient').on('submit', addNewIngredient);
+$('#ingredientName').on('submit', addNewIngredient);
 
 // Remove ingredient when remove button is clicked
 $('#ingredients-added').on('click', '.remove', removeIngredient)
@@ -58,7 +58,7 @@ $('#ingredients-added').on('blur', '.editor', saveIngredient);
     function addNewIngredient (event) {
         event.preventDefault();
 
-        var newIngredient = $('#newIngredient').val();
+        var newIngredient = $('#ingredientName').val();
 
         $('#ingredients-added').append('<li><div class="btn btn-success btn-lg">' + newIngredient + '</div><a class="edit">Edit</a><a class="remove">Remove</a></li>');
         
@@ -94,14 +94,14 @@ $('#ingredients-added').on('blur', '.editor', saveIngredient);
 
         var listIngredient = $(this).parent();
 
-        listIngredient.html('<span class="item">' + ingredientText + '</span><a class="edit">Edit</a><a class="remove">Remove</a>');)
+        listIngredient.html('<span class="item">' + ingredientText + '</span><a class="edit">Edit</a><a class="remove">Remove</a>');
     }
 
 
 // Add an additional text area for more recipe instructions
         function getNumberOfSteps () {
 
-            count = $('#form-group col-xs-12').length;
+            var count = $('.form-group col-xs-12').length;
             console.log(count);
         }
 
@@ -112,12 +112,14 @@ $('#ingredients-added').on('blur', '.editor', saveIngredient);
             var newStepHtml = '<div class="row control-group">' +
                             '<div class="form-group col-xs-12 floating-label-form-group controls">' +
                                 '<label>Message</label>' +
-                                '<textarea rows="5" class="form-control" placeholder="Step ' + stepNumber + '" id="message" required data-validation-required-message="Please enter an instruction."></textarea>' +
+                                '<textarea rows="4" class="form-control" placeholder="Step ' + 
+                                stepNumber + 
+                                '" id="message"></textarea>' +
                                 '<p class="help-block text-danger"></p>' +
                             '</div>' +
                         '</div>';
             // append newStepHtml to the screen
-            $('#form-group col-xs-12').append('newStepHtml' + 1);
+            $('.steps').append(newStepHtml);
 
         }
 

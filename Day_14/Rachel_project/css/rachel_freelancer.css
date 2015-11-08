@@ -493,4 +493,5 @@ form .row:first-child .floating-label-form-group{
 }*/
 .btn-lg, .btn-group-lg, .btn {
     padding: 8px 17px 8px 17px;
+    margin: 45px 0px 0px 0px; 
 }

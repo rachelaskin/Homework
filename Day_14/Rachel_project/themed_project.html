@@ -231,6 +231,13 @@
                                   <option>1/2</option>
                                   <option>2/3</option>
                                   <option>3/4</option>
+                                  <option>1</option>
+                                  <option>1 1/8</option>
+                                  <option>1 1/4</option>
+                                  <option>1 1/3</option>
+                                  <option>1 1/2</option>
+                                  <option>1 2/3</option>
+                                  <option>1 3/4</option>
                                   <option>2</option>
                                   <option>2 1/8</option>
                                   <option>2 1/4</option>
@@ -297,6 +304,19 @@
                                     </select>
                                 </div>
                                 <div class="col-xs-4">
+                                    <select class="form-control" id="select">
+                                      <option disabled selected>Units</option>
+                                      <option>cups</option>
+                                      <option>fluid ounces</option> 
+                                      <option>ounces</option>
+                                      <option>pounds</option>
+                                      <option>pint</option>
+                                      <option>quart</option>
+                                      <option>teaspoons</option>
+                                      <option>tablespoons</option>
+                                    </select>
+                                </div>
+                                <div class="col-xs-4">
                                     <input type="text" class="form-control" placeholder="Ingredient" id="ingredientName">
                                  </div>
                                 <p class="help-block text-danger"></p>
@@ -312,36 +332,38 @@
                             </div>    
                         </div>
                     </form>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Message</label>
-                                <textarea rows="5" class="form-control" placeholder="Step 1" id="message" required data-validation-required-message="Please enter an instruction."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Message</label>
-                                <textarea rows="5" class="form-control" placeholder="Step 2" id="message" required data-validation-required-message="Please enter an instruction."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Message</label>
-                                <textarea rows="5" class="form-control" placeholder="Step 3" id="message" required data-validation-required-message="Please enter an instruction."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Message</label>
-                                <textarea rows="5" class="form-control" placeholder="Step 4" id="message" required data-validation-required-message="Please enter an instruction."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
+                        <div class="steps">  
+                          <div class="row control-group">
+                              <div class="form-group col-xs-12 floating-label-form-group controls">
+                                  <label>Message</label>
+                                  <textarea rows="4" class="form-control" placeholder="Step 1" id="message"></textarea>
+                                  <p class="help-block text-danger"></p>
+                              </div>
+                          </div>
+                          <div class="row control-group">
+                              <div class="form-group col-xs-12 floating-label-form-group controls">
+                                  <label>Message</label>
+                                  <textarea rows="4" class="form-control" placeholder="Step 2" id="message"></textarea>
+                                  <p class="help-block text-danger"></p>
+                              </div>
+                          </div>
+                          <div class="row control-group">
+                              <div class="form-group col-xs-12 floating-label-form-group controls">
+                                  <label>Message</label>
+                                  <textarea rows="4" class="form-control" placeholder="Step 3" id="message"></textarea>
+                                  <p class="help-block text-danger"></p>
+                              </div>
+                          </div>
+                          <div class="row control-group">
+                              <div class="form-group col-xs-12 floating-label-form-group controls">
+                                  <label>Message</label>
+                                  <textarea rows="4" class="form-control" placeholder="Step 4" id="message"></textarea>
+                                  <p class="help-block text-danger"></p>
+                              </div>
+                          </div>
                         </div>
                         <br>
-                        <div id="add-step"></div>
+                        <div id="add-buttons"></div>
                         <!-- This is the second place where I'm having trouble w/jQuery. I want the "Add another step" button to add an additional text area for adding more instructions. -->
                         <div class="row">
                             <div class="form-group col-xs-6">
