@@ -495,3 +495,17 @@ form .row:first-child .floating-label-form-group{
     padding: 8px 17px 8px 17px;
     margin: 45px 0px 0px 0px; 
 }
+.recipe-ingredients {
+    text-align: left;
+}
+.recipe-steps{
+    list-style-type : none;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.65;
+}
+.modal-body p{
+    font-style: italic;
+    color: #2E9E85;
+    font-size: 18px;
+}
