@@ -495,6 +495,9 @@ form .row:first-child .floating-label-form-group{
     padding: 8px 17px 8px 17px;
     margin: 45px 0px 0px 0px; 
 }
+.portfolio-item{
+    max-height: 100%;
+}
 .recipe-ingredients {
     text-align: left;
 }
@@ -508,4 +511,12 @@ form .row:first-child .floating-label-form-group{
     font-style: italic;
     color: #2E9E85;
     font-size: 18px;
+}
+#ingredients-added{
+    margin-top: 200px;
+}
+#list{
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.65;
 }

@@ -37,20 +37,21 @@ $('.navbar-collapse ul li a').click(function() {
 });
 
 
-
+// $(‘form#newIngredient’).on(‘submit’, function(event) {
+//     event.preventDefault();
 
 // Add new ingredient when submit button is clicked
-$('#ingredientName').on('submit', addNewIngredient);
-
+$('newIngredient').on('submit', addNewIngredient);
+    
 // Remove ingredient when remove button is clicked
-$('#ingredients-added').on('click', '.remove', removeIngredient)
-
+$('#ingredients-added').on('click', '.remove', removeIngredient);
+    
 // When an edit link is clicked, edit the ingredient
 $('#ingredients-added').on('click', '.edit', editIngredient);
-
+    
 // When an item editor is submitted, save the changes
 $('#ingredients-added').on('submit', '.editor', saveIngredient);
-
+    
 // When a user leaves an item editor form, save the changes
 $('#ingredients-added').on('blur', '.editor', saveIngredient);
 
@@ -61,6 +62,7 @@ $('#ingredients-added').on('blur', '.editor', saveIngredient);
         var newIngredient = $('#ingredientName').val();
 
         $('#ingredients-added').append('<li><div class="btn btn-success btn-lg">' + newIngredient + '</div><a class="edit">Edit</a><a class="remove">Remove</a></li>');
+        // append('<li><div class="btn btn-success btn-lg">' + newIngredient + '</div><a class="edit">Edit</a><a class="remove">Remove</a></li>');
         
     }
 
@@ -101,15 +103,16 @@ $('#ingredients-added').on('blur', '.editor', saveIngredient);
 // Add an additional text area for more recipe instructions
         function getNumberOfSteps () {
 
-            var count = $('.form-group col-xs-12').length;
-            console.log(count);
+            var count = $('.step').length;
+            
+            return count;
         }
 
         function addNewStep(){
 
-            var stepNumber = getNumberOfSteps() + 1;
+            var stepNumber = getNumberOfSteps() + 4;
 
-            var newStepHtml = '<div class="row control-group">' +
+            var newStepHtml = '<div class="row control-group step">' +
                             '<div class="form-group col-xs-12 floating-label-form-group controls">' +
                                 '<label>Message</label>' +
                                 '<textarea rows="4" class="form-control" placeholder="Step ' + 
