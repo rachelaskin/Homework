@@ -49,7 +49,6 @@
                 </button>
                 <a class="navbar-brand" href="#page-top">Shayne's Kitchen</a>
             </div>
-            <!-- Scroll stopped working somewhere along the way although I have not edited the scroll portions of jQuery. -->
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
@@ -225,7 +224,7 @@
                                     <label>Ingredients</label>
                                 </div>
                                 <div class="col-xs-4">
-                                    <select class="form-control" id="select">
+                                    <select class="form-control" id="select-measurement">
                                   <option disabled selected>Measurement</option>
                                   <option>1/8</option>
                                   <option>1/4</option>
@@ -306,7 +305,7 @@
                                     </select>
                                 </div>
                                 <div class="col-xs-4">
-                                    <select class="form-control" id="select">
+                                    <select class="form-control" id="select-unit">
                                       <option disabled selected>Units</option>
                                       <option>cups</option>
                                       <option>fluid ounces</option> 
@@ -326,7 +325,9 @@
                                 <div id="add-ingredient">
                                 <!-- Clicking the "Add ingredient" button should display a list of new ingredients typed in, similar to our To Do List classwork assignment. The list should appear underneath the ingredient fields and above "Step 1." Right now, clicking the button does nothing. -->
                                         <div class="form-group col-xs-4">
+                                          <div class="ingredient-success">
                                             <button type="submit" id="add" class="btn btn-success btn-lg">Add ingredient</button>
+                                          </div>  
                                         </div>
                                 </div>
                                 <div id="list">
@@ -698,13 +699,18 @@
     </div>
 
     <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+
     <script src="js/jquery.js"></script>
+<!--     this was for the edit form, did not end up using it <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script> -->
+
+     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/cbpAnimatedHeader.js"></script>
 

@@ -493,6 +493,9 @@ form .row:first-child .floating-label-form-group{
 }*/
 .btn-lg, .btn-group-lg, .btn {
     padding: 8px 17px 8px 17px;
+
+ } 
+ .ingredient-success{  
     margin: 45px 0px 0px 0px; 
 }
 .portfolio-item{
@@ -500,6 +503,12 @@ form .row:first-child .floating-label-form-group{
 }
 .recipe-ingredients {
     text-align: left;
+}
+.edit:hover{
+    color: #2E9E85;
+}
+.remove:hover{
+    color: #2E9E85;
 }
 .recipe-steps{
     list-style-type : none;
